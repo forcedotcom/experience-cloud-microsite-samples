@@ -1,0 +1,16 @@
+{
+    "orgName": "Lightning Web Components in Community",
+    "edition": "Developer",
+    "features": ["Communities"],
+    "settings": {
+        "lightningExperienceSettings": {
+            "enableS1DesktopEnabled": true
+        },
+        "mobileSettings": {
+            "enableS1EncryptedStoragePref2": false
+        },
+        "orgPreferenceSettings": {
+            "networksEnabled": true
+        }
+    }
+}

@@ -1,0 +1,71 @@
+<template>
+    <template if:true={isSubmitted}>
+        <p class="slds-text-color_success slds-var-m-left_medium" role="status">
+            {submitActionSuccessMessage}
+        </p>
+    </template>
+    <template if:false={isSubmitted}>
+        <form onsubmit={handleSubmit} novalidate>
+            <div class="slds-var-m-around_medium">
+                <lightning-input
+                    type="text"
+                    label="First Name"
+                    placeholder="Enter your first name"
+                    name="FirstName"
+                    data-firstname="FirstName"
+                ></lightning-input>
+
+                <lightning-input
+                    type="text"
+                    label="Last Name"
+                    placeholder="Enter your last name"
+                    name="LastName"
+                    data-lastname="LastName"
+                    required
+                ></lightning-input>
+
+                <lightning-input
+                    type="email"
+                    label="Email"
+                    placeholder="Enter your email"
+                    data-email="Email"
+                    name="Email"
+                ></lightning-input>
+
+                <lightning-input
+                    type="tel"
+                    label="Phone"
+                    placeholder="Enter your phone number"
+                    data-phone="Phone"
+                    name="Phone"
+                ></lightning-input>
+
+                <lightning-input
+                    type="text"
+                    label="Company"
+                    placeholder="Enter your company name"
+                    name="Company"
+                    data-company="Company"
+                    required
+                ></lightning-input>
+
+                <lightning-button
+                    variant="brand"
+                    disabled={isSubmitButtonDisabled}
+                    label={buttonText}
+                    type="submit"
+                >
+                </lightning-button>
+
+                <template if:true={hasError}>
+                    <p
+                        class="slds-text-color_error slds-var-m-top_medium"
+                        role="alert"
+                    >
+                        {submitActionErrorMessage}
+                    </p>
+                </template>
+            </div>
+        </form>
+    </template>
+</template>

@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Lead Form Component Submit Tests should not fire submit event when fields have invalid inputs 1`] = `
+<c-lead-form>
+  #shadow-root(open)
+    <form
+      novalidate=""
+    >
+      <div
+        class="slds-var-m-around_medium"
+      >
+        <lightning-input
+          data-firstname="FirstName"
+        >
+          #shadow-root(open)
+        </lightning-input>
+        <lightning-input
+          data-lastname="LastName"
+        >
+          #shadow-root(open)
+        </lightning-input>
+        <lightning-input
+          data-email="Email"
+        >
+          #shadow-root(open)
+        </lightning-input>
+        <lightning-input
+          data-phone="Phone"
+        >
+          #shadow-root(open)
+        </lightning-input>
+        <lightning-input
+          data-company="Company"
+        >
+          #shadow-root(open)
+        </lightning-input>
+        <lightning-button>
+          #shadow-root(open)
+        </lightning-button>
+      </div>
+    </form>
+</c-lead-form>
+`;

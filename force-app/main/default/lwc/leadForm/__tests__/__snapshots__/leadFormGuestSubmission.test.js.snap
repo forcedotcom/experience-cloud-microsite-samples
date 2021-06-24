@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Lead Form Component Guest User Submit Tests should create a lead successfully with a 404 error when logged in as a guest user  1`] = `
+<c-lead-form>
+  #shadow-root(open)
+    <p
+      class="slds-text-color_success slds-var-m-left_medium"
+      role="status"
+    >
+      Thank you!
+    </p>
+</c-lead-form>
+`;
