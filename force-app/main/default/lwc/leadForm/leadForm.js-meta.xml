@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>51.0</apiVersion>
+    <apiVersion>53.0</apiVersion>
     <isExposed>true</isExposed>
     <masterLabel>Lead Form</masterLabel>
     <targets>
@@ -11,13 +11,13 @@
         <targetConfig targets="lightningCommunity__Default">
             <property
                 name="buttonText"
-                label="Button Text"
+                label="Submit Button Label"
                 type="String"
-                default="Submit"
+                default="SUBMIT"
             />
             <property
                 name="submitActionType"
-                label="Submit Action Type"
+                label="Form Acknowledgement Type"
                 type="String"
                 default="Show inline message"
                 datasource="Show inline message, Redirect to existing page"
@@ -30,13 +30,13 @@
             />
             <property
                 name="submitActionSuccessMessage"
-                label="Submit Action Success Message"
+                label="Success Message"
                 type="String"
                 default="Thank you!"
             />
             <property
                 name="submitActionErrorMessage"
-                label="Submit Action Error Message"
+                label="Error Message"
                 type="String"
                 default="Oh no, something went wrong!"
             />
