@@ -1,34 +1,29 @@
 # **Lead Form Lightning Web Component**
 
-This repository contains code for the Lead Form Lightning Web Component (LWC).
-This Lead Form component allows you to submit lead records into Salesforce. It is a draggable component supported in Salesforce sites.
+This repository contains code for the Lead Form Lightning Web Component (LWC), found in Experience Builder. The Lead Form allows you to submit Lead records into Salesforce.
 
 ## **Experience Cloud Site**
 
----
-
-From Experience Builder, you can find the Lead Form component by selecting the lightning icon and dragging it onto your canvas.
+From Experience Builder, select the Components menu and find the Lead Form component. Drag a new Lead Form onto your canvas.
 Select the component to open the property panel and modify the options.
 
 ## **Features**
 
----
-
 -   Insert a Lead record directly from Experience Site.
--   Configurable properties, including Button Text, Button Size, Submit Button Action Type, Submit Action Success Message, and Submit Action Error Message.
+-   Configurable properties, including: button text, button size, submit button action type, submit action success message, and submit action error message.
 
 ## **Installing the component using a Scratch Org**
 
 ---
 
-1. Set up your environment. Follow the steps in the [Quick Start: Lightning Web Components Trailhead](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components/) project. The steps include:
+1. To set up your environment, follow the steps in the [Quick Start: Lightning Web Components Trailhead](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components/) project. The steps include:
 
     1. Enable Dev Hub
     2. Install Salesforce CLI
     3. Install Visual Studio Code
     4. Install the Visual Studio Code Salesforce extensions, including the Lightning Web Components extension
 
-2. If you haven't already done so, authorize your hub org and provide it with an alias (myhuborg in the command below):
+2. If you haven't already done so, authorize your hub org and give it an alias (myhuborg in the command below):
 
     ```shell
     sfdx force:auth:web:login -d -a myhuborg
@@ -43,7 +38,7 @@ Select the component to open the property panel and modify the options.
 4. Create a scratch org and provide it with an alias (lead-form in the command below):
 
     ```shell
-    sfdx force:org:create -s -f config/project-scratch-def.json -a contact-form
+    sfdx force:org:create -s -f config/project-scratch-def.json -a lead-form
     ```
 
 5. Push the component to your scratch org:
