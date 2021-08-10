@@ -1,6 +1,6 @@
 # **experience-cloud-microsite-samples**
 
-[![CircleCI](https://circleci.com/gh/forcedotcom/experience-cloud-microsite-samples/tree/main.svg?style=svg)](https://circleci.com/gh/forcedotcom/experience-cloud-microsite-samples/tree/main)
+[![CircleCI](https://circleci.com/gh/forcedotcom/experience-cloud-microsite-samples/tree/main.svg?style=svg&circle-token=b99c7ee466fa35bd24023980d777d027c0d000be)](https://circleci.com/gh/forcedotcom/experience-cloud-microsite-samples/tree/main)
 
 The examples include quick start code samples designed to help you to create the Lead Form. Before you start, see [Send Visitor Information to the Salesforce Leads Object](https://help.salesforce.com) to set the appropriate permissions for access to the API and Lead object.
 
