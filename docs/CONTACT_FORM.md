@@ -1,17 +1,16 @@
-# **Lead Form Lightning Web Component**
+# **Contact Form Lightning Web Component**
 
-This repository contains code for the Lead Form Lightning Web Component (LWC), found in Experience Builder. The Lead Form allows you to submit Lead records into Salesforce.
+This repository contains code for the Contact Form Lightning Web Component (LWC), found in Experience Builder. The Contact Form allows you to submit Contact records into Salesforce Marketing Cloud.
 
 ## **Experience Cloud Site**
 
-From Experience Builder, select the Components menu and find the Lead Form component. Drag a new Lead Form onto your canvas.
+From Experience Builder, select the Components menu and find the Contact Form component. Drag a new Contact Form onto your canvas.
 Select the component to open the property panel and modify the options.
 
 ## **Features**
 
--   Insert a Lead record directly from Experience Site.
--   Configurable properties, including: button text, button size, submit button action type, submit action success message, and submit action error message.
--   [Send Visitor Information to the Salesforce Leads Object](https://help.salesforce.com/s/articleView?id=sf.networks_microsites_lead_form.htm&type=5) to set the appropriate permissions for access to the API and Lead object
+-   Insert a Contact record directly from Experience Site to your Salesforce Marketing Cloud org.
+-   Configurable properties, including: form id, button text, button size, submit button action type, submit action success message, and submit action error message.
 
 ## **Installing the component using a Scratch Org**
 
@@ -30,16 +29,16 @@ Select the component to open the property panel and modify the options.
     sfdx force:auth:web:login -d -a myhuborg
     ```
 
-3. Clone the Lead Form repository:
+3. Clone the Contact Form repository:
 
     ```shell
     git clone git@github.com:forcedotcom/experience-cloud-microsite-samples.git
     ```
 
-4. Create a scratch org and provide it with an alias (lead-form in the command below):
+4. Create a scratch org and provide it with an alias (Contact-form in the command below):
 
     ```shell
-    sfdx force:org:create -s -f config/project-scratch-def.json -a lead-form
+    sfdx force:org:create -s -f config/project-scratch-def.json -a Contact-form
     ```
 
 5. Push the component to your scratch org:
@@ -60,8 +59,8 @@ Select the component to open the property panel and modify the options.
 
 1. From Salesforce Setup, enter `Digital Experiences` and select **All Sites**.
 2. Select **Builder** next to the site you want to modify.
-3. Select the lightning icon and drag the Lead Form component onto your builder canvas.
-4. Customize the properties and insert Lead records with the form.
+3. Select the lightning icon and drag the Contact Form component onto your builder canvas.
+4. Customize the properties and insert Contact records with the form.
 
 ## **Salesforce DX Project: Next Steps**
 
