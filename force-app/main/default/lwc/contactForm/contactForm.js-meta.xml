@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Contact Form</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs> 
+        <targetConfig targets="lightningCommunity__Default">
+        <property name="formId" label="Form Id" type="String" default="" />
+            <property
+                name="buttonText"
+                label="Button Text"
+                type="String"
+                default="Submit"
+            />
+            <property
+                name="buttonSize"
+                label="Button Size"
+                type="String"
+                default="small"
+                datasource="small,medium,large"
+            />
+            <property
+                name="submitActionType"
+                label="Submit Action Type"
+                type="String"
+                default="Show inline message"
+                datasource="Show inline message, Redirect to existing page"
+            />
+            <property
+                name="redirectUrl"
+                label="Redirect URL"
+                type="String"
+                default=""
+            />
+            <property
+                name="submitActionSuccessMessage"
+                label="Submit Action Success Message"
+                type="String"
+                default="Thank you!"
+            />
+            <property
+                name="submitActionErrorMessage"
+                label="Submit Action Error Message"
+                type="String"
+                default="Oh no, something went wrong!"
+            />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

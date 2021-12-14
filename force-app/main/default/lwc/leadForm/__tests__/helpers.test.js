@@ -38,7 +38,12 @@ describe('Lead Form Helper Functions', () => {
             { name: 'LastName', value: 'Smith' },
             { name: 'Email', value: 'test@test.com' },
             { name: 'Phone', value: '1111111111' },
-            { name: 'Company', value: 'Test Company' }
+            { name: 'Company', value: 'Test Company' },
+            {
+                type: 'checkbox',
+                name: 'Subscribe',
+                checked: true
+            }
         ];
 
         const resultObj = {
@@ -46,7 +51,8 @@ describe('Lead Form Helper Functions', () => {
             LastName: 'Smith',
             Email: 'test@test.com',
             Phone: '1111111111',
-            Company: 'Test Company'
+            Company: 'Test Company',
+            Subscribe: true
         };
 
         //Call helper function
