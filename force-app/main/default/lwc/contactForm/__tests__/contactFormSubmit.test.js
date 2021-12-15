@@ -67,10 +67,10 @@ describe('Contact Form Component Submit Tests', () => {
             return Promise.resolve();
         });
 
-        //Simulate click on submit button
-        const button = element.shadowRoot.querySelector('button');
+        //Initiate the submit
+        const form = element.shadowRoot.querySelector('form');
+        form.dispatchEvent(new CustomEvent('submit'));
 
-        button?.click();
         //Need to resolve promise for API call
         await Promise.resolve();
         //Need to wait for then on API call
@@ -108,10 +108,9 @@ describe('Contact Form Component Submit Tests', () => {
             return Promise.resolve();
         });
 
-        //Simulate click on submit button
-        const button = element.shadowRoot.querySelector('button');
-
-        button?.click();
+        //Initiate the submit
+        const form = element.shadowRoot.querySelector('form');
+        form.dispatchEvent(new CustomEvent('submit'));
 
         //Need to resolve promise for API call
         await Promise.resolve();
@@ -144,9 +143,9 @@ describe('Contact Form Component Submit Tests', () => {
         //Mock submitForm throwing an error
         submitForm.mockRejectedValue(new Error('Error!'));
 
-        //Simulate click on submit button
-        const button = element.shadowRoot.querySelector('button');
-        button?.click();
+        //Initiate the submit
+        const form = element.shadowRoot.querySelector('form');
+        form.dispatchEvent(new CustomEvent('submit'));
 
         //Need to resolve promise for mock implementation
         await Promise.resolve();
@@ -163,7 +162,5 @@ describe('Contact Form Component Submit Tests', () => {
         expect(submitForm).toHaveBeenCalled();
         const pTag = element.shadowRoot.querySelector('p');
         expect(pTag.textContent).toEqual('Oh no, something went wrong!');
-        //Check if submit button has been disabled after click
-        expect(button.disabled).toBeFalsy();
     });
 });

@@ -90,17 +90,6 @@ export default class ContactForm extends LightningElement {
     formId = '';
 
     /**
-     * Gets the CSS classes for the button based on size selected
-     *
-     * @type {string}
-     * @readonly
-     * @private
-     */
-    get computedClass() {
-        return `slds-button slds-button_brand slds-var-m-top_small slds-text-heading_${this.buttonSize} slds-p-around_${this.buttonSize}`;
-    }
-
-    /**
      * Handles successful response and takes appropriate action
      */
     handleSuccess() {

@@ -34,9 +34,13 @@ exports[`Lead Form Component Submit Tests should not fire submit event when fiel
         >
           #shadow-root(open)
         </lightning-input>
-        <lightning-button>
-          #shadow-root(open)
-        </lightning-button>
+        <div
+          class="button"
+        >
+          <lightning-button>
+            #shadow-root(open)
+          </lightning-button>
+        </div>
       </div>
     </form>
 </c-lead-form>

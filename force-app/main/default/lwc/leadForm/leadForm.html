@@ -49,13 +49,15 @@
                     required
                 ></lightning-input>
 
-                <lightning-button
-                    variant="brand"
-                    disabled={isSubmitButtonDisabled}
-                    label={buttonText}
-                    type="submit"
-                >
-                </lightning-button>
+                <div class="button">
+                    <lightning-button
+                        variant="brand"
+                        disabled={isSubmitButtonDisabled}
+                        label={buttonText}
+                        type="submit"
+                    >
+                    </lightning-button>
+                </div>
 
                 <template if:true={hasError}>
                     <p

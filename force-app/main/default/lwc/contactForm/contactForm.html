@@ -40,13 +40,16 @@
                     name="Phone"
                 ></lightning-input>
 
-                <button
-                    type="submit"
-                    disabled={isSubmitButtonDisabled}
-                    class={computedClass}
-                >
-                    {buttonText}
-                </button>
+                <div class="button">
+                    <lightning-button
+                        variant="brand"
+                        disabled={isSubmitButtonDisabled}
+                        label={buttonText}
+                        type="submit"
+                        data-button="Button"
+                    >
+                    </lightning-button>
+                </div>
 
                 <template if:true={hasError}>
                     <p class="slds-text-color_error slds-var-m-top_medium">
