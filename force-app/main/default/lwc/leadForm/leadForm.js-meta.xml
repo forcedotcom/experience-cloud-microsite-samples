@@ -13,7 +13,7 @@
                 name="buttonText"
                 label="Submit Button Label"
                 type="String"
-                default="SUBMIT"
+                default="Submit"
             />
             <property
                 name="submitActionType"

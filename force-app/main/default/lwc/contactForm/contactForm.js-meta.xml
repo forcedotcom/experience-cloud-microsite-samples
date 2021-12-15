@@ -17,13 +17,6 @@
                 default="Submit"
             />
             <property
-                name="buttonSize"
-                label="Button Size"
-                type="String"
-                default="small"
-                datasource="small,medium,large"
-            />
-            <property
                 name="submitActionType"
                 label="Submit Action Type"
                 type="String"
